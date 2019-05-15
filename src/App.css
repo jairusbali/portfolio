@@ -7,8 +7,21 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  color: white;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.modal {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  /* height: 100%; */
+  width: 100%;
+}
+
+.is-current {
+  color: red;
+  border-bottom: 1px solid red;
 }

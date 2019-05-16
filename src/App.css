@@ -22,6 +22,20 @@ html {
 }
 
 .is-current {
-  color: red;
-  border-bottom: 1px solid red;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #4675fe;
+}
+
+@media only screen and (max-width: 40rem) {
+  #hamburger {
+    display: block;
+  }
+
+  #navitems {
+    display: none;
+  }
+}
+
+.open {
+  transform: translateY(0);
 }

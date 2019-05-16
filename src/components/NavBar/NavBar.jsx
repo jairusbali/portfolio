@@ -65,7 +65,7 @@ const MenuContainer = styled.div`
     height: 5px;
     padding: 2px 0;
     width: 100%;
-    background-color: #000;
+    background-color: #fff;
     border-radius: 2px;
   }
 `;
@@ -159,7 +159,7 @@ export default () => {
             // activeClass="is-current"
             to={item}
             spy={true}
-            smooth={"easeOutQuad"}
+            smooth={true}
             offset={-48}
             duration={500}
             // timeout will automatically retract sideNav

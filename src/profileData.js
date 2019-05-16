@@ -18,22 +18,22 @@ export const projectsData = [
     imgName: "assets/images/projects/ramenapp_250x250.png",
     title: "Ramen ordering application",
     description: "ReactJs, Firebase, Material-UI, React-Redux, React-thunk",
-    gitLink: "https://jairusbali.github.io/ramenappprototype/",
-    codeLink: "https://github.com/jairusbali/ramenappprototype"
+    codeLink: "https://jairusbali.github.io/ramenappprototype/",
+    gitLink: "https://github.com/jairusbali/ramenappprototype"
   },
   {
     imgName: "assets/images/projects/weatherapp_250x250.png",
     title: "Open Weather Map",
-    description: "ReactJs, OpenWeatherMap API, Axios",
-    gitLink: "https://jairusbali.github.io/weatherapp/",
-    codeLink: "https://github.com/jairusbali/weatherapp"
+    description: "ReactJs, OpenWeatherMap API, Axios, Material-UI",
+    codeLink: "https://jairusbali.github.io/weatherapp/",
+    gitLink: "https://github.com/jairusbali/weatherapp"
   },
   {
-    imgName: "assets/images/projects/weatherapp_250x250.png",
+    imgName: "assets/images/projects/portfolio_250x250.png",
     title: "Portfolio Template",
     description: "ReactJs, styled-components, CSS3",
-    gitLink: "https://jairusbali.github.io/ramenappprototype/",
-    codeLink: "https://github.com/jairusbali/ramenappprototype"
+    codeLink: "https://jairusbali.github.io/portfolio/",
+    gitLink: "https://github.com/jairusbali/portfolio"
   }
 ];
 

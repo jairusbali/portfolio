@@ -45,7 +45,8 @@ const IconLink = styled.a`
 
   &:hover {
     background-color: white;
-    i {
+    i,
+    span {
       color: #404a51;
     }
   }

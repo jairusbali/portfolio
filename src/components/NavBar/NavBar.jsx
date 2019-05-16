@@ -12,6 +12,8 @@ import { Link } from "react-scroll";
 // on top of the section
 import Scrollspy from "react-scrollspy";
 
+import { headerData } from "../../profileData";
+
 const Navbar = styled.div`
   position: fixed;
   width: 100%;
@@ -31,6 +33,7 @@ const ContainerSpaceBetween = styled(Container)`
     margin: 0 1rem;
 
     a {
+      text-transform: uppercase;
       text-decoration: none;
       color: white;
       cursor: pointer;
@@ -38,9 +41,10 @@ const ContainerSpaceBetween = styled(Container)`
   }
 `;
 
-const Logo = styled.div`
-  background-color: red;
+const Logo = styled.h1`
   margin-left: 2rem;
+  text-transform: uppercase;
+  font-weight: 100;
 `;
 
 const NavItems = styled.div`
@@ -107,6 +111,7 @@ const SideNav = styled.div`
 
     a {
       text-decoration: none;
+      text-transform: uppercase;
       color: black;
       cursor: pointer;
     }
@@ -149,15 +154,7 @@ export default () => {
   const navLinks = (
     <Scrollspy items={navItems} currentClassName="is-current" offset={-48}>
       {navItems.map(item => (
-        <li
-          key={item}
-          onClick={() =>
-            setTimeout(
-              () => (mobileState && state ? setState(!state) : null),
-              500
-            )
-          }
-        >
+        <li key={item}>
           <Link
             // activeClass="is-current"
             to={item}
@@ -165,11 +162,13 @@ export default () => {
             smooth={"easeOutQuad"}
             offset={-48}
             duration={500}
+            // timeout will automatically retract sideNav
+            // when a sideNav link is clicked
             onClick={() =>
-              setTimeout(() => mobileState && state && setState(!state), 1000)
+              setTimeout(() => mobileState && state && setState(!state), 1800)
             }
           >
-            {item.toUpperCase()}
+            {item}
           </Link>
         </li>
       ))}
@@ -188,7 +187,7 @@ export default () => {
       {sideNav}
       <Navbar>
         <ContainerSpaceBetween>
-          <Logo>Hello</Logo>
+          <Logo>{headerData.firstName}</Logo>
           <HamburgerMenu id="hamburger" onClick={() => setState(!state)}>
             <MenuContainer>
               <div />

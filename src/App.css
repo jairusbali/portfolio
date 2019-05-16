@@ -10,6 +10,10 @@ body {
   color: white;
 }
 
+h1 {
+  font-weight: 200;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -24,9 +28,10 @@ html {
 .is-current {
   padding-bottom: 3px;
   border-bottom: 3px solid #4675fe;
+  /* border-bottom: 3px solid #fff; */
 }
 
-@media only screen and (max-width: 40rem) {
+@media only screen and (max-width: 60rem) {
   #hamburger {
     display: block;
   }
@@ -34,8 +39,4 @@ html {
   #navitems {
     display: none;
   }
-}
-
-.open {
-  transform: translateY(0);
 }

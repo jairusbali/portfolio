@@ -72,7 +72,7 @@ const IconLink = styled.a`
     margin: 0;
     background-color: #404a51;
     padding: 0.7rem 0;
-    width: 50%;
+    width: 90%;
 
     i {
       height: 1rem;

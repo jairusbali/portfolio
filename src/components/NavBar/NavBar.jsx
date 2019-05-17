@@ -124,6 +124,10 @@ const SideNav = styled.div`
       : css`
           ${slideOut} 500ms ease-out both;
         `};
+
+  @media only screen and (max-width: 60rem) {
+    width: 15rem;
+  }
 `;
 
 const Backdrop = styled.div`
@@ -165,7 +169,7 @@ export default () => {
             // timeout will automatically retract sideNav
             // when a sideNav link is clicked
             onClick={() =>
-              setTimeout(() => mobileState && state && setState(!state), 1800)
+              setTimeout(() => mobileState && state && setState(!state), 1200)
             }
           >
             {item}

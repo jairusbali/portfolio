@@ -31,11 +31,12 @@ const Section = styled(Container)`
 
   @media only screen and (max-width: 60rem) {
     ${Heading} {
-      font-size: 3rem;
+      font-size: 2rem;
     }
 
     ${SubHeading} {
       font-size: 1rem;
+      margin: 2rem auto;
     }
   }
 `;

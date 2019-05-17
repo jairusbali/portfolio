@@ -10,4 +10,4 @@ The styling is implemented with [styled-components](https://www.styled-component
 - Styled-components
 - CSS3
 
-[Live Preview](https://www.jairusbali.com)
+[Live Preview](www.jairusbali.com)
